@@ -16,9 +16,7 @@ public class DictionaryViewModel extends AndroidViewModel {
 
     public DictionaryViewModel(Application application) {
         super(application);
-        if (mDictionary == null) {
-            mDictionary = new MutableLiveData<>();
-        }
+        mDictionary = new MutableLiveData<>();
     }
 
     public LiveData<List<Dictionary.Word>> getDictionaryLiveData() {
